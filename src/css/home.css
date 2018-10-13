@@ -1,0 +1,79 @@
+@import url('./components/_header.css');
+@import url('./components/_footer.css');
+
+section .content .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+section .content .row:last-child {
+  margin-bottom: 0;
+}
+
+section .content .slogan {
+  min-height: 25rem;
+  position: relative;
+}
+
+section .content .slogan .description {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-size: 2rem;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+/* slogan end */
+section .content .link {
+  justify-content: space-between;
+}
+
+section .content .link .item {
+  flex: 1;
+}
+
+section .content .link .item:first-child {
+  margin-right: 2rem;
+}
+
+section .content .link .item .thumbnail {
+  width: 100%;
+  height: 16rem;
+}
+
+section .content .link .item {
+  width: 100%;
+}
+/* link end */
+
+section .content .quote {
+  display: flex;
+  height: 14rem;
+}
+
+section .content .quote .arrtibution {
+  flex: 1;
+}
+
+section .content .quote .thumbnail {
+  height: 100%;
+  border-left: 1px solid gray;
+}
+/* quote end */
+
+section .content .news .item {
+  flex: 1;
+}
+
+section .content .news .item:nth-child(2n + 2) {
+  margin: 0 2rem;
+}
+
+section .content .news .item .thumbnail {
+  width: 100%;
+  height: 10rem;
+}
+
+/* content end */

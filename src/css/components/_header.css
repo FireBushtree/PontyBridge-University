@@ -1,0 +1,89 @@
+section header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.2rem 0.2rem 2rem;
+  justify-content: space-between;
+}
+
+section header h1 {
+  flex: 1;
+}
+
+section header .nav-title {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+section header .navbar-burger {
+  flex: 1;
+  display: flex;
+  padding-right: 0.5rem;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section header .navbar-burger span {
+  width: 2.5rem;
+  height: 0.1rem;
+  background: black;
+}
+
+section header .navbar-burger span:nth-child(2) {
+  margin: 0.5rem 0;
+}
+
+section header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+section header nav a {
+  display: block;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+section header nav a:hover {
+  color: white;
+  background: black;
+}
+
+/* responsive */
+
+@media screen and (max-width: 768px) {
+  section header nav {
+    display: none;
+  }
+
+  section header nav[class~="is-active"]{
+    width: 100%;
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+
+  section header .navbar-burger {
+    display: flex;
+  }
+
+  section header .navbar-burger[class~="is-active"] span:first-child{
+    transform: translateY(1px) rotate(45deg)
+  }
+
+  section header .navbar-burger[class~="is-active"] span:nth-child(2) {
+    display: none;
+  }
+
+  section header .navbar-burger[class~="is-active"] span:last-child {
+    transform: translateY(-1px) rotate(-45deg);
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  section header .navbar-burger {
+    display: none;
+  }
+}
+/* header end */

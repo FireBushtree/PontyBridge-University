@@ -1,0 +1,19 @@
+
+section footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+section footer .navbar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+section footer .navbar span {
+  display: block;
+}
+
+section footer .name {
+  align-self: flex-end;
+}

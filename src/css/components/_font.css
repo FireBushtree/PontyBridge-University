@@ -1,0 +1,16 @@
+.is-1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.is-2 {
+  font-size: 1.9rem;
+}
+
+.is-3 {
+  font-size: 1.5rem;
+}
+
+.font-to-right {
+  text-align: right;
+}
