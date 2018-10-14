@@ -17,14 +17,16 @@ section .content .slogan {
 }
 
 section .content .slogan .description {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  font-size: 2rem;
-  position: absolute;
-  align-items: center;
-  justify-content: center;
+  flex: 1;
 }
+
+section .content .slogan .slogan-content {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
 /* slogan end */
 section .content .link {
   justify-content: space-between;
@@ -51,6 +53,7 @@ section .content .link .item {
 section .content .quote {
   display: flex;
   height: 14rem;
+  border: 1px solid gray;
 }
 
 section .content .quote .arrtibution {
@@ -77,3 +80,30 @@ section .content .news .item .thumbnail {
 }
 
 /* content end */
+
+/* responsive */
+@media screen and (max-width: 768px) {
+  section .content .row {
+    flex-direction: column;
+  }
+
+  section .content .news .item:nth-child(2n + 2) {
+    margin: 0;
+  }
+
+  section .content .slogan .slogan-content {
+    top: 0;
+    left: 0;
+    transform: none;
+    position: inherit;
+  }
+
+  section .content .quote {
+    border: none;
+    font-size: 2rem;
+  }
+
+  section .content .quote .thumbnail {
+    display: none;
+  }
+}

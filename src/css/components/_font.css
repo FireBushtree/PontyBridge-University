@@ -1,6 +1,5 @@
 .is-1 {
   font-size: 3rem;
-  font-weight: bold;
 }
 
 .is-2 {
@@ -9,6 +8,14 @@
 
 .is-3 {
   font-size: 1.5rem;
+}
+
+.is-4 {
+  font-size: 1.2rem;
+}
+
+.is-crude {
+  font-weight: bold;
 }
 
 .font-to-right {

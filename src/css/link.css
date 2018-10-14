@@ -11,6 +11,14 @@ section .content .item {
   justify-content: space-between;
 }
 
+section .content .item .responsive-title{
+  display: none;
+}
+
+section .content .item:nth-child(2n + 1) {
+  flex-direction: row-reverse;
+}
+
 section .content .item .thumbnail {
   flex: 1;
   height: 18rem;
@@ -19,4 +27,28 @@ section .content .item .thumbnail {
 section .content .item .content {
   flex: 1;
   padding: 0 0.2rem;
+}
+
+/* responsive */
+
+@media screen and (max-width: 768px) {
+  section .content .item {
+    flex-direction: column;
+  }
+
+  section .content .item:nth-child(2n + 1) {
+    flex-direction: column;
+  }
+
+  section .content .item div{
+    text-align: left;
+  }
+
+  section .content .item .content h3{
+    display: none;
+  }
+
+  section .content .item .responsive-title{
+    display: block;
+  }
 }
