@@ -1,109 +1,292 @@
-@import url('./components/_header.css');
-@import url('./components/_footer.css');
+@keyframes study-img-to-short {
+  to {height: 45%;}
+}
 
 section .content .row {
+  flex: 1;
+  min-height: 17rem;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+section .content .row::before {
+  top: -2rem;
+  right: 5rem;
+  content: 'more >';
+  position: absolute;
+}
+
+section .content .row:first-child {
+  margin-top: 4rem;
+}
+
+section .content .school .menu {
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
+  flex-direction: column;
 }
 
-section .content .row:last-child {
-  margin-bottom: 0;
+section .content .school .menu .main {
+  padding-right: 2rem;
+  justify-content: flex-end;
 }
 
-section .content .slogan {
-  min-height: 25rem;
+section .content .school .menu .main > span {
+  height: 20px;
+  color: #fff;
+  transform: rotate(90deg) translate(80px, -20px);
+}
+
+section .content .school .menu .main > img {
+  width: 45%;
+  height: 240px;
+  top: -40px;
   position: relative;
 }
 
-section .content .slogan .description {
-  flex: 1;
+section .content .school .menu {
+  width: 40%;
+  background: #3f51b3;
 }
 
-section .content .slogan .slogan-content {
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
+section .content .school .menu .topic {
+  color: #fff;
+  justify-content: center;
 }
 
-/* slogan end */
-section .content .link {
-  justify-content: space-between;
-}
-
-section .content .link .item {
-  flex: 1;
-}
-
-section .content .link .item:first-child {
-  margin-right: 2rem;
-}
-
-section .content .link .item .thumbnail {
-  width: 100%;
-  height: 16rem;
-}
-
-section .content .link .item {
-  width: 100%;
-}
-/* link end */
-
-section .content .quote {
+section .content .school .item {
+  width: 13%;
+  margin: 0 1%;
   display: flex;
-  height: 14rem;
-  border: 1px solid gray;
+  cursor: pointer;
+  flex-direction: column;
 }
 
-section .content .quote .arrtibution {
-  flex: 1;
+section .content .school .item:hover {
+  border-radius: 3px;
+  box-shadow: 0 0 15px black;
 }
 
-section .content .quote .thumbnail {
-  height: 100%;
-  border-left: 1px solid gray;
+section .content .school .item:hover > img {
+  animation: study-img-to-short 0.5s forwards;
 }
-/* quote end */
+
+section .content .school .item:hover > span {
+  background: #fff;
+}
+
+
+section .content .school .item > img {
+  width: 100%;
+  height: 65%;
+}
+
+section .content .school .item > span {
+  background: #f5f5f5;
+  padding: 1.2rem 1rem;
+}
+
+section .content .school .item .title {
+  margin-bottom: 0.2rem;
+}
+
+section .content .news {
+  padding-left:2rem;
+  background: #f5f5f5;
+}
+
+section .content .news::after {
+  content: 'News';
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+section .content .news::before,
+section .content .news::after{
+  top: 2rem;
+  position: absolute;
+}
+
+section .content .news .introduce {
+  width: 50%;
+  margin: 6rem 0;
+  height: 20rem;
+  background: url('../../assets/images/news-1.jpg') center;
+  background-size: cover;
+}
 
 section .content .news .item {
-  flex: 1;
+  width: 20%;
+  margin: 0 2%;
+  cursor: pointer;
+  padding-top: 6rem;
+  flex-direction: column;
 }
 
-section .content .news .item:nth-child(2n + 2) {
-  margin: 0 2rem;
+section .content .news .item:hover {
+  background: linear-gradient(#3f51b3, #f5f5f5);
 }
 
-section .content .news .item .thumbnail {
+section .content .news .item > img {
   width: 100%;
   height: 10rem;
+  margin-bottom: 10px;
 }
 
-/* content end */
+section .content .news .item > p {
+  padding: 5px;
+}
 
-/* responsive */
+section .content .event {
+  padding: 5rem 0 0 0;
+  min-height: 25rem;
+}
+
+section .content .event::after{
+  top: -3rem;
+  left: 2rem;
+  content: 'Events';
+  font-weight: bold;
+  font-size: 2.5rem;
+  position: absolute;
+}
+
+section .content .event .inner {
+  width: 100%;
+  background: #3f51b3;
+}
+
+section .content .event .inner .item {
+  flex: 1;
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  padding: 2rem 2rem;
+  flex-direction: column;
+}
+
+section .content .event .inner .item-left {
+  top: -5rem;
+}
+
+section .content .event .inner .item-right {
+  top: 3rem;
+  flex-direction: column-reverse;
+}
+
+section .content .event .inner .item > img {
+  width: 100%;
+  height: 80%;
+}
+
+section .content .event .inner .item > span {
+  padding: 2rem;
+  background: #fff;
+}
+
 @media screen and (max-width: 768px) {
+  @keyframes study-img-to-short {
+    to {height: 55%;}
+  }
+
+  section .content .school .menu {
+    display: none;
+  }
+
+  section .content .school .item {
+    flex: 1;
+    margin: 0 10px;
+    box-shadow: 0 0 12px #636060;
+  }
+
+  section .content .school .item:last-child {
+    display: none;
+  }
+
+  section .content .school .item > span {
+    background: #fff;
+    padding: 0.2rem 0.2rem;
+  }
+
   section .content .row {
+    font-size: 0.8rem;
+    min-height: 10rem;
+    margin-bottom: 1rem;
+  }
+
+  section .content .row::before {
+    right: 2rem;
+  }
+
+  section .content .school::after {
+    content: 'Study';
+    top: -2.5rem;
+  }
+
+  section .content .row::after {
+    left: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: absolute;
+  }
+
+  section .content .news .introduce {
+    display: none
+  }
+
+  section .content .news {
+    padding: 0;
+    padding-bottom: 3rem;
+  }
+
+  section .content .news .item {
+    padding-top: 0;
+    margin-top: 4rem;
+    box-shadow: 0 0 15px #8a8686;
+  }
+
+  section .content .news .item > img {
+    height: 6rem;
+  }
+
+  section .content .news .item:hover {
+    background: inherit;
+  }
+
+  section .content .event::before,
+  section .content .event::after {
+    top: 0;
+  }
+
+  section .content .news .item {
+    flex: 1;
+  }
+
+  section .content .event {
+    padding-top: 3rem;
+  margin-bottom: 2rem;
+  }
+
+  section .content .event .inner {
+    background: #fff;
+  }
+
+  section .content .event .inner .item{
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0 10px;
+    box-shadow: 0 0 10px #8a8686;
+  }
+
+  section .content .event .inner .item-right {
     flex-direction: column;
   }
 
-  section .content .news .item:nth-child(2n + 2) {
-    margin: 0;
+  section .content .event .inner .item > img {
+    height: 50%;
   }
 
-  section .content .slogan .slogan-content {
-    top: 0;
-    left: 0;
-    transform: none;
-    position: inherit;
-  }
-
-  section .content .quote {
-    border: none;
-    font-size: 2rem;
-  }
-
-  section .content .quote .thumbnail {
-    display: none;
+  section .content .event .inner .item > span {
+    padding: 1rem 0.5rem 0.2rem;
   }
 }

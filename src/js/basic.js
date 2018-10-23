@@ -1,15 +1,10 @@
-(function () {
-  var topNavbar = document.querySelector('#topNavbar')
-  var navbarBuger = document.querySelector('#navbarBuger')
+var navbar = document.querySelector('#navbar')
+var navbarBurger = document.querySelector('#navbarBurger')
 
-  navbarBuger.addEventListener('click', function () {
-    if (this.classList.contains('is-active')) {
-      this.classList.remove('is-active')
-      topNavbar.classList.remove('is-active')
-    } else {
-      this.classList.add('is-active')
-      topNavbar.classList.add('is-active')
-    }
-
-  })
-})()
+navbarBurger.addEventListener('click', function () {
+  if (navbar.classList.contains('is-active')) {
+    navbar.classList.remove('is-active')
+  } else {
+    navbar.classList.add('is-active')
+  }
+})

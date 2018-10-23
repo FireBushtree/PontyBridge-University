@@ -1,23 +1,13 @@
-.is-1 {
-  font-size: 3rem;
-}
-
-.is-2 {
-  font-size: 1.9rem;
-}
-
-.is-3 {
-  font-size: 1.5rem;
-}
-
-.is-4 {
-  font-size: 1.2rem;
-}
-
 .is-crude {
   font-weight: bold;
 }
 
-.font-to-right {
-  text-align: right;
+.is-1 {
+  font-size: 2.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .is-1 {
+    font-size: 1.5rem;
+  }
 }

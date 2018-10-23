@@ -1,54 +1,117 @@
-@import url('./components/_header.css');
-@import url('./components/_footer.css');
-
-section .content .title {
-  margin-bottom: 1rem;
+.swiper-container {
+  width: 80%;
+  height: 400px;
+  position: relative;
+  box-shadow: 0 0 10px #000000;
 }
 
-section .content .item {
+.main {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-left: 5rem;
+  padding-bottom: 2rem;
+}
+
+.swiper-container .item .thumbnail {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-container .item > p {
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.8;
+  color: #fff;
   display: flex;
-  padding: 0.5rem;
-  justify-content: space-between;
+  padding: 0 2rem;
+  min-height: 4rem;
+  font-weight: bold;
+  position: absolute;
+  align-items: center;
+  background: #000000;
 }
 
-section .content .item .responsive-title{
+.pager {
+  justify-content: center;
+}
+
+section header .bottom {
   display: none;
 }
 
-section .content .item:nth-child(2n + 1) {
-  flex-direction: row-reverse;
+section .content {
+  margin-top: 3rem;
 }
 
-section .content .item .thumbnail {
+section .content .course-recommend {
+  margin-top: 3rem;
+  flex-direction: column;
+}
+
+section .content .course-recommend > .title {
+  color: #3f51b3;
+  align-items: center;
+  flex-direction: column;
+}
+
+section .content .course-recommend > .title > span{
+  width: 3rem;
+  height: 0.3rem;
+  margin-top: 0.3rem;
+  margin-bottom: 2rem;
+  background: #3f51b3;
+}
+
+section .content .course-recommend .item-wrapper {
+  padding: 0 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section .content .course-recommend .item-wrapper .item {
+  width: 30%;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  flex-direction: column;
+  box-shadow: 0 0 20px #000000;
+}
+
+section .content .course-recommend .item-wrapper .item > img {
   flex: 1;
-  height: 18rem;
+  width: 100%;
 }
 
-section .content .item .content {
-  flex: 1;
-  padding: 0 0.2rem;
+section .content .course-recommend .item-wrapper .item .description {
+  background: #fff;
+  flex-direction: column;
+  padding: 0.5rem 0.5rem 1rem;
 }
 
-/* responsive */
+section .content .course-recommend .item-wrapper .item .description h4 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+section .content .course-recommend .item-wrapper .item .description span {
+  font-size: 0.8rem;
+}
 
 @media screen and (max-width: 768px) {
-  section .content .item {
-    flex-direction: column;
+  section .content .course-recommend .item-wrapper .item {
+    width: 100%;
   }
 
-  section .content .item:nth-child(2n + 1) {
-    flex-direction: column;
+  .main {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
   }
 
-  section .content .item div{
-    text-align: left;
-  }
-
-  section .content .item .content h3{
-    display: none;
-  }
-
-  section .content .item .responsive-title{
-    display: block;
+  .swiper-container {
+    width: 90%;
+    height: 13rem;
   }
 }
