@@ -45,7 +45,7 @@ section .content .school .menu .main > img {
 
 section .content .school .menu {
   width: 40%;
-  background: #3f51b3;
+  background: #9a55b2;
 }
 
 section .content .school .menu .topic {
@@ -63,7 +63,7 @@ section .content .school .item {
 
 section .content .school .item:hover {
   border-radius: 3px;
-  box-shadow: 0 0 15px black;
+  box-shadow: 0 0 15px #791899;
 }
 
 section .content .school .item:hover > img {
@@ -123,7 +123,7 @@ section .content .news .item {
 }
 
 section .content .news .item:hover {
-  background: linear-gradient(#3f51b3, #f5f5f5);
+  background: linear-gradient(#9a55b2, #f5f5f5);
 }
 
 section .content .news .item > img {
@@ -152,7 +152,7 @@ section .content .event::after{
 
 section .content .event .inner {
   width: 100%;
-  background: #3f51b3;
+  background: #9a55b2;
 }
 
 section .content .event .inner .item {
@@ -195,7 +195,7 @@ section .content .event .inner .item > span {
   section .content .school .item {
     flex: 1;
     margin: 0 10px;
-    box-shadow: 0 0 12px #636060;
+    box-shadow: 0 0 12px #791899;
   }
 
   section .content .school .item:last-child {
@@ -241,7 +241,7 @@ section .content .event .inner .item > span {
   section .content .news .item {
     padding-top: 0;
     margin-top: 4rem;
-    box-shadow: 0 0 15px #8a8686;
+    box-shadow: 0 0 15px #791899;
   }
 
   section .content .news .item > img {
@@ -275,7 +275,7 @@ section .content .event .inner .item > span {
     left: 0;
     padding: 0;
     margin: 0 10px;
-    box-shadow: 0 0 10px #8a8686;
+    box-shadow: 0 0 10px #791899;
   }
 
   section .content .event .inner .item-right {
