@@ -18,11 +18,15 @@ section .content .slogan {
 
 section .content .slogan .description {
   flex: 1;
+  background: url('../../assets/images/bg-slogan.jpg');
+  background-size: cover;
 }
 
 section .content .slogan .slogan-content {
   top: 50%;
   left: 50%;
+  z-index: 1;
+  color: #fff;
   position: absolute;
   transform: translate(-50%, -50%);
 }
@@ -45,6 +49,16 @@ section .content .link .item .thumbnail {
   height: 16rem;
 }
 
+section .content .link .item .study {
+  background: url('../../assets/images/bg-home-study.jpg');
+  background-size: cover;
+}
+
+section .content .link .item .research {
+  background: url('../../assets/images/bg-home-research.jpg');
+  background-size: cover;
+}
+
 section .content .link .item {
   width: 100%;
 }
@@ -61,8 +75,10 @@ section .content .quote .arrtibution {
 }
 
 section .content .quote .thumbnail {
+  width: 30%;
   height: 100%;
-  border-left: 1px solid gray;
+  background: url('../../assets/images/bg-home-quote.png');
+  background-size: cover;
 }
 /* quote end */
 
@@ -78,6 +94,20 @@ section .content .news .item .thumbnail {
   width: 100%;
   height: 10rem;
 }
+
+section .content .news .item .news-1 {
+  background: url('../../assets/images/bg-home-news-1.jpg');
+  background-size: cover;
+}
+section .content .news .item .news-2 {
+  background: url('../../assets/images/bg-home-news-2.jpg');
+  background-size: cover;
+}
+section .content .news .item .news-3 {
+  background: url('../../assets/images/bg-home-news-3.jpg');
+  background-size: cover;
+}
+
 
 /* content end */
 
@@ -105,5 +135,9 @@ section .content .news .item .thumbnail {
 
   section .content .quote .thumbnail {
     display: none;
+  }
+
+  section .content .slogan .slogan-content {
+    color: black;
   }
 }

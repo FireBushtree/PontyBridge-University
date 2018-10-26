@@ -8,6 +8,8 @@ section .content .title {
 section .content .item {
   display: flex;
   padding: 0.5rem;
+  margin: 10px 0;
+  box-shadow: 0 2px 10px #9A55B2;
   justify-content: space-between;
 }
 
@@ -23,6 +25,33 @@ section .content .item .thumbnail {
   flex: 1;
   height: 18rem;
 }
+
+section .content .item .study-1 {
+  background: url('../../assets/images/bg-study-1.jpg') center 10%;
+  background-size: cover;
+}
+section .content .item .study-2 {
+  background: url('../../assets/images/bg-study-2.jpg');
+  background-size: cover;
+}
+section .content .item .study-3 {
+  background: url('../../assets/images/bg-study-3.jpg') center 10%;
+  background-size: cover;
+}
+
+section .content .item .research-1 {
+  background: url('../../assets/images/bg-research-1.jpg') center 10%;
+  background-size: cover;
+}
+section .content .item .research-2 {
+  background: url('../../assets/images/bg-research-2.jpg');
+  background-size: cover;
+}
+section .content .item .research-3 {
+  background: url('../../assets/images/bg-research-3.jpg') center 10%;
+  background-size: cover;
+}
+
 
 section .content .item .content {
   flex: 1;

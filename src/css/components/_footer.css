@@ -1,6 +1,9 @@
 
 section footer {
+  color: #fff;
   display: flex;
+  background: #791B99;
+  padding: 1rem 0.5rem 0.5rem;
   justify-content: space-between;
 }
 
@@ -8,6 +11,10 @@ section footer .navbar {
   flex: 1;
   display: flex;
   flex-direction: column;
+}
+
+section footer .navbar > a{
+  color: #fff;
 }
 
 section footer .navbar span {

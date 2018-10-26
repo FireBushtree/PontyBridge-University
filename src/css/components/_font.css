@@ -21,3 +21,9 @@
 .font-to-right {
   text-align: right;
 }
+
+@media screen and (max-width: 768px) {
+  .is-1 {
+    font-size: 2rem;
+  }
+}

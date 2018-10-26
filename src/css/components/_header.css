@@ -1,17 +1,21 @@
 section header {
   display: flex;
+  color: #fff;
   flex-wrap: wrap;
-  padding: 0.2rem 0.2rem 2rem;
+  align-items: center;
+  padding: 2.5rem 4rem;
+  background: #791B99;
   justify-content: space-between;
 }
 
 section header h1 {
   flex: 1;
+  font-size: 2.4rem;
+  font-weight: bold;
 }
 
-section header .nav-title {
-  font-size: 2rem;
-  font-weight: normal;
+section header h1 > a {
+  color: #fff;
 }
 
 section header .navbar-burger {
@@ -26,7 +30,7 @@ section header .navbar-burger {
 section header .navbar-burger span {
   width: 2.5rem;
   height: 0.3rem;
-  background: black;
+  background: #fff;
   border-radius: 1rem;
   box-sizing: border-box;
 }
@@ -41,19 +45,25 @@ section header nav {
 }
 
 section header nav a {
+  color: #fff;
   display: block;
   padding: 0 1rem;
   cursor: pointer;
-}
-
-section header nav a:hover {
-  color: white;
-  background: black;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 /* responsive */
 
 @media screen and (max-width: 768px) {
+  section header {
+    padding: 2.5rem 1rem;
+  }
+
+  section header h1 {
+    font-size: 1.5rem;
+  }
+
   section header nav {
     display: none;
   }
@@ -66,6 +76,7 @@ section header nav a:hover {
   }
 
   section header .navbar-burger {
+    flex: 0;
     display: flex;
   }
 
