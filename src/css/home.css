@@ -25,11 +25,17 @@ section .content .slogan .description {
 section .content .slogan .slogan-content {
   top: 50%;
   left: 50%;
+  width: 80%;
   z-index: 1;
   color: #fff;
   position: absolute;
   transform: translate(-50%, -50%);
 }
+
+  section .content .slogan .slogan-content h2 {
+    width: 100%;
+    margin: 1rem 0;
+  }
 
 /* slogan end */
 section .content .link {
@@ -50,13 +56,22 @@ section .content .link .item .thumbnail {
 }
 
 section .content .link .item .study {
-  background: url('../../assets/images/bg-home-study.jpg');
+  background: url('../../assets/images/bg-home-study.jpg') center;
   background-size: cover;
 }
 
 section .content .link .item .research {
-  background: url('../../assets/images/bg-home-research.jpg');
+  background: url('../../assets/images/bg-home-research.jpg') center;
   background-size: cover;
+}
+
+section .content .link .item .introduce {
+  padding: 0 0.5rem;
+}
+
+section .content .link .item .introduce > a {
+  margin: 1rem 0;
+  display: block;
 }
 
 section .content .link .item {
@@ -66,18 +81,31 @@ section .content .link .item {
 
 section .content .quote {
   display: flex;
-  height: 14rem;
-  border: 1px solid gray;
+  min-height: 17rem;
 }
 
 section .content .quote .arrtibution {
   flex: 1;
+  color: #fff;
+  padding: 0.5rem;
+  background: #A993FF;
+}
+
+section .content .quote .arrtibution .quote-student {
+  display: flex;
+  margin: 1rem;
+  flex-direction: column;
+}
+
+section .content .quote .arrtibution .quote-student:nth-child(3) {
+  padding: 1rem 0;
+  border-top: 2px dashed #fff;
+  border-bottom: 2px dashed #fff;
 }
 
 section .content .quote .thumbnail {
   width: 30%;
-  height: 100%;
-  background: url('../../assets/images/bg-home-quote.png');
+  background: url('../../assets/images/bg-home-quote.jpg') center;
   background-size: cover;
 }
 /* quote end */
@@ -95,16 +123,25 @@ section .content .news .item .thumbnail {
   height: 10rem;
 }
 
+section .content .news .item .introduce {
+  padding: 0 0.5rem;
+}
+
+section .content .news .item .introduce > p {
+  margin: 0.5rem 0;
+  word-break: break-all;
+}
+
 section .content .news .item .news-1 {
-  background: url('../../assets/images/bg-home-news-1.jpg');
+  background: url('../../assets/images/bg-home-news-1.jpg') center;
   background-size: cover;
 }
 section .content .news .item .news-2 {
-  background: url('../../assets/images/bg-home-news-2.jpg');
+  background: url('../../assets/images/bg-home-news-2.jpg') center;
   background-size: cover;
 }
 section .content .news .item .news-3 {
-  background: url('../../assets/images/bg-home-news-3.jpg');
+  background: url('../../assets/images/bg-home-news-3.jpg') center;
   background-size: cover;
 }
 
@@ -124,6 +161,7 @@ section .content .news .item .news-3 {
   section .content .slogan .slogan-content {
     top: 0;
     left: 0;
+    width: 100%;
     transform: none;
     position: inherit;
   }
@@ -139,5 +177,15 @@ section .content .news .item .news-3 {
 
   section .content .slogan .slogan-content {
     color: black;
+  }
+
+  section .content .link .item {
+    margin: 2rem 0;
+    box-shadow: 0 0 10px #9A55B2;
+  }
+
+  section .content .news .item {
+    margin: 1rem 0;
+    box-shadow: 0 0 10px #9A55B2;
   }
 }
